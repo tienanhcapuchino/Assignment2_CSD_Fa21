@@ -1,0 +1,4 @@
+Bus 74. Price 9000. Hoa Lac, Thang Long, Le Quang Dao, Me Tri, Pham Hung, My Dinh.
+Bus 99. Price 50000. Hoa Lac, My Dinh.
+Bus 34. Price 7000. My Dinh, Cau Giay, Kim Ma, Hoan Kiem.
+From: Hoa Lac. To: Hoan Kiem.

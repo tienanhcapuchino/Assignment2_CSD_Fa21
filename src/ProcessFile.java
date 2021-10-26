@@ -1,23 +1,11 @@
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
+import java.io.*;
+import java.util.*;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author ptuan
- */
 public class ProcessFile {
 
     public void loatFile(ArrayList<BusRouter> b) {
-        File f = new File("C:\\Users\\ptuan\\Documents\\NetBeansProjects\\Assigment2_CSD\\input.txt");
+        File f = new File("input.txt");
         try {
             FileReader fileread = new FileReader(f);
             BufferedReader buf = new BufferedReader(fileread);
@@ -43,7 +31,7 @@ public class ProcessFile {
     }
 
     public boolean fileChecker() {
-        File file = new File("C:\\Users\\ptuan\\Documents\\NetBeansProjects\\Assigment2_CSD\\input.txt");
+        File file = new File("input.txt");
         if (!file.exists()) {
             try {
                 System.out.println("File not exist!!!");

@@ -1,13 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author ptuan
- */
 public class BusRouter {
     public String router;
     public int price;
@@ -52,5 +43,22 @@ public class BusRouter {
         }
         return k;
     }
+
+    public String displayArr(){
+        for (int i = 0; i < Stop.length-1; i++) {
+            System.out.print(Stop[i]+" ->");
+        }
+        System.out.print(Stop[Stop.length-1]);
+        return "";
+    }
+
+    @Override
+    public String toString() {
+        System.out.print("name= "+router+", price= "+price+"$ \nstop={");
+        displayArr();
+        System.out.print("}");
+        return "\n";
+    }
     
 }
+
